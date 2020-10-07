@@ -1,0 +1,1330 @@
+2020-09-24T16:07:15+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:07:16+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-24T16:07:16+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-24T16:07:20+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-24T16:07:20+09:00 - WARN [adapters/fabric]: Org1's registrar's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - WARN [adapters/fabric]: Org2's registrar's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - WARN [adapters/fabric]: Org1's admin's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - WARN [adapters/fabric]: Org2's admin's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - WARN [adapters/fabric]: client0.org1.example.com's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - WARN [adapters/fabric]: client0.org2.example.com's materials found locally in file system key-value stores. Make sure it is the right one! 
+
+2020-09-24T16:07:21+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-24T16:07:24+09:00 - ERROR [caliper-flow]: Error: Error: Couldn't create Channel 'mychannel': Failed to connect before the deadline URL:grpcs://localhost:7050
+    at Fabric._createChannels (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabric.js:336:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2020-09-24T16:07:24+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-24T16:07:30+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:07:31+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-24T16:07:31+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-24T16:07:44+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-24T16:07:44+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2020-09-24T16:07:45+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:07:50+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com 
+
+2020-09-24T16:07:50+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com 
+
+2020-09-24T16:07:50+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:07:55+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:08:09+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2020-09-24T16:08:09+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:08:23+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2020-09-24T16:08:23+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:08:36+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2020-09-24T16:08:36+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:08:50+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2020-09-24T16:08:50+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:08:55+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2020-09-24T16:08:55+09:00 - INFO [defaultTest]: ####### Testing 'smallOperations' ####### 
+
+2020-09-24T16:08:55+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Launching client with PID  1914 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Launching client with PID  1920 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Launching client with PID  1927 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Launching client with PID  1940 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Launching client with PID  1946 
+
+2020-09-24T16:08:55+09:00 - INFO [client-util.js]: Waiting for 5 clients to be ready...  
+
+2020-09-24T16:08:56+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:08:55+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:08:55+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:08:55+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:08:55+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:08:55+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:08:57+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:08:57+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:08:57+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:08:57+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:08:57+09:00 - INFO [client-util.js]: 5 clients ready, starting test phase 
+
+2020-09-24T16:08:57+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:08:57+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2020-09-24T16:08:57+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2020-09-24T16:08:57+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2020-09-24T16:08:57+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:08:57+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: Info: client 1946 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: Info: client 1927 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: Info: client 1920 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: Info: client 1914 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:08:57+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#4 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:08:57+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#2 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:08:57+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#1 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:08:57+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:08:57+09:00 - INFO [local-client.js]: Info: client 1940 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:08:57+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#3 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:08:57+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:08:58+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 304 Succ: 150 Fail:0 Unfinished:154 
+
+2020-09-24T16:08:59+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 687 Succ: 500 Fail:0 Unfinished:187 
+
+2020-09-24T16:09:00+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1082 Succ: 900 Fail:0 Unfinished:182 
+
+2020-09-24T16:09:01+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1478 Succ: 1300 Fail:0 Unfinished:178 
+
+2020-09-24T16:09:02+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1883 Succ: 1689 Fail:0 Unfinished:194 
+
+2020-09-24T16:09:03+09:00 - DEBUG [report-builder]: r.create.max: 1600931342.769 r.create.min: 1600931337.573 r.final.max: 1600931343.132 r.final.min: 1600931338.078 r.final.last: 1600931343.132 
+
+2020-09-24T16:09:03+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 359.8 
+
+2020-09-24T16:09:03+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 2000 
+
+2020-09-24T16:09:03+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2020-09-24T16:09:03+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: ###test result:### 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: 
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| smallOperations | 2000 | 0    | 384.9 tps | 0.63 s      | 0.30 s      | 0.46 s      | 359.8 tps  |
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: 
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 8.9MB       | 8.0MB       | 38.40%   | 25.11%   | 3.4MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.0MB       | 8.3MB       | 37.66%   | 28.12%   | 3.2MB      | 1.9MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.7MB       | 6.7MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 183.9MB     | 175.3MB     | 227.23%  | 159.83%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.4MB     | 177.6MB     | 221.86%  | 162.89%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 128.4MB     | 72.3MB      | 60.21%   | 40.67%   | 9.6MB      | 9.9MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 122.5MB     | 70.1MB      | 63.66%   | 43.48%   | 7.5MB      | 14.0MB      | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 137.2MB     | 78.1MB      | 59.32%   | 40.78%   | 9.5MB      | 9.8MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.6MB      | 10.6MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.5MB      | 10.5MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [defaultTest]: ------ Passed 'smallOperations' testing ------ 
+
+2020-09-24T16:09:03+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: ###all test results:### 
+
+2020-09-24T16:09:03+09:00 - INFO [report-builder]: 
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | smallOperations | 2000 | 0    | 384.9 tps | 0.63 s      | 0.30 s      | 0.46 s      | 359.8 tps  |
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2020-09-24T16:09:03+09:00 - INFO [monitor.js]: 
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 8.9MB       | 38.40%   | 3.4MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.0MB       | 37.66%   | 3.2MB      | 1.9MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 6.9MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.1MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.7MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.1MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 183.9MB     | 227.23%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.4MB     | 221.86%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 128.4MB     | 60.21%   | 9.6MB      | 9.9MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 122.5MB     | 63.66%   | 7.5MB      | 14.0MB      | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 137.2MB     | 59.32%   | 9.5MB      | 9.8MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.6MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.5MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [caliper-flow]: Generated report with path /home/oslab/caliper_v0.1.0/report-20200924T070903.html 
+
+2020-09-24T16:09:03+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2020-09-24T16:09:03+09:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 1 succeeded, 0 failed #
+#######################################
+ 
+
+2020-09-24T16:09:03+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-24T16:09:03+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:09:03+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:09:03+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:09:03+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:09:03+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:12:09+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:12:10+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-24T16:12:10+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-24T16:12:23+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2020-09-24T16:12:24+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:12:29+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com 
+
+2020-09-24T16:12:29+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com 
+
+2020-09-24T16:12:29+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:12:34+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:12:48+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2020-09-24T16:12:48+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:13:02+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2020-09-24T16:13:02+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:13:16+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2020-09-24T16:13:16+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:13:30+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2020-09-24T16:13:30+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:13:35+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2020-09-24T16:13:35+09:00 - INFO [defaultTest]: ####### Testing 'smallOperations' ####### 
+
+2020-09-24T16:13:35+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Launching client with PID  26817 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Launching client with PID  26822 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Launching client with PID  26828 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Launching client with PID  26829 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Launching client with PID  26840 
+
+2020-09-24T16:13:35+09:00 - INFO [client-util.js]: Waiting for 5 clients to be ready...  
+
+2020-09-24T16:13:36+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:13:35+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:13:35+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:13:35+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:13:35+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:13:35+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:13:37+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:13:37+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:13:37+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:13:37+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:13:37+09:00 - INFO [client-util.js]: 5 clients ready, starting test phase 
+
+2020-09-24T16:13:37+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:13:37+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2020-09-24T16:13:37+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2020-09-24T16:13:37+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2020-09-24T16:13:37+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2020-09-24T16:13:37+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: Info: client 26840 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: Info: client 26828 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: Info: client 26817 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: Info: client 26822 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:13:37+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#4 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:13:37+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#2 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:13:37+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:13:37+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#1 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:13:37+09:00 - INFO [local-client.js]: Info: client 26829 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:13:37+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#3 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:13:37+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:13:38+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 301 Succ: 150 Fail:0 Unfinished:151 
+
+2020-09-24T16:13:39+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 675 Succ: 500 Fail:0 Unfinished:175 
+
+2020-09-24T16:13:40+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1075 Succ: 900 Fail:0 Unfinished:175 
+
+2020-09-24T16:13:41+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1483 Succ: 1300 Fail:0 Unfinished:183 
+
+2020-09-24T16:13:42+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1889 Succ: 1700 Fail:0 Unfinished:189 
+
+2020-09-24T16:13:43+09:00 - DEBUG [report-builder]: r.create.max: 1600931622.646 r.create.min: 1600931617.378 r.final.max: 1600931622.913 r.final.min: 1600931617.857 r.final.last: 1600931622.913 
+
+2020-09-24T16:13:43+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 361.3 
+
+2020-09-24T16:13:43+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 2000 
+
+2020-09-24T16:13:43+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2020-09-24T16:13:43+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: ###test result:### 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: 
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| smallOperations | 2000 | 0    | 379.7 tps | 0.60 s      | 0.27 s      | 0.44 s      | 361.3 tps  |
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: 
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.4MB       | 8.5MB       | 38.60%   | 24.99%   | 3.5MB      | 2.1MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.5MB       | 8.8MB       | 38.54%   | 28.33%   | 3.3MB      | 1.9MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.0MB     | 177.5MB     | 228.76%  | 166.26%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 183.8MB     | 171.9MB     | 221.43%  | 155.44%  | 10.4MB     | 6.2MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 128.0MB     | 74.2MB      | 57.10%   | 40.06%   | 9.5MB      | 3.5MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 130.8MB     | 77.9MB      | 57.32%   | 38.84%   | 9.5MB      | 9.8MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 150.5MB     | 87.2MB      | 63.78%   | 44.74%   | 7.6MB      | 20.4MB      | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.7MB      | 10.7MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.1MB      | 10.1MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [defaultTest]: ------ Passed 'smallOperations' testing ------ 
+
+2020-09-24T16:13:43+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: ###all test results:### 
+
+2020-09-24T16:13:43+09:00 - INFO [report-builder]: 
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | smallOperations | 2000 | 0    | 379.7 tps | 0.60 s      | 0.27 s      | 0.44 s      | 361.3 tps  |
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2020-09-24T16:13:43+09:00 - INFO [monitor.js]: 
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.4MB       | 38.60%   | 3.5MB      | 2.1MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.5MB       | 38.54%   | 3.3MB      | 1.9MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 7.0MB       | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.0MB     | 228.76%  | 10.3MB     | 6.1MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 183.8MB     | 221.43%  | 10.4MB     | 6.2MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 128.0MB     | 57.10%   | 9.5MB      | 3.5MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 130.8MB     | 57.32%   | 9.5MB      | 9.8MB       | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 150.5MB     | 63.78%   | 7.6MB      | 20.4MB      | 0B        | 12.8MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.7MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.1MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [caliper-flow]: Generated report with path /home/oslab/caliper_v0.1.0/report-20200924T071343.html 
+
+2020-09-24T16:13:43+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2020-09-24T16:13:43+09:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 1 succeeded, 0 failed #
+#######################################
+ 
+
+2020-09-24T16:13:43+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-24T16:13:43+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:13:43+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:13:43+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:13:43+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:13:43+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:15:21+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:15:22+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-24T16:15:22+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-24T16:15:35+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2020-09-24T16:15:36+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:15:41+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com 
+
+2020-09-24T16:15:42+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com 
+
+2020-09-24T16:15:42+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:15:47+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:16:02+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2020-09-24T16:16:02+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:16:16+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2020-09-24T16:16:16+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:16:31+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2020-09-24T16:16:31+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:16:45+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2020-09-24T16:16:45+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:16:51+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2020-09-24T16:16:51+09:00 - INFO [defaultTest]: ####### Testing 'smallOperations' ####### 
+
+2020-09-24T16:16:51+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Launching client with PID  18543 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Launching client with PID  18548 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Launching client with PID  18554 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Launching client with PID  18560 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Launching client with PID  18566 
+
+2020-09-24T16:16:51+09:00 - INFO [client-util.js]: Waiting for 5 clients to be ready...  
+
+2020-09-24T16:16:52+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:16:51+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:16:51+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:16:51+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:16:51+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:16:51+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:16:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:16:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:16:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:16:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:16:52+09:00 - INFO [client-util.js]: 5 clients ready, starting test phase 
+
+2020-09-24T16:16:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:16:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2020-09-24T16:16:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2020-09-24T16:16:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2020-09-24T16:16:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2020-09-24T16:16:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: Info: client 18554 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: Info: client 18560 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: Info: client 18543 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: Info: client 18566 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:16:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#2 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:16:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#3 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:16:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:16:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#4 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:16:52+09:00 - INFO [local-client.js]: Info: client 18548 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:16:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#1 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:16:53+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:16:54+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 297 Succ: 150 Fail:0 Unfinished:147 
+
+2020-09-24T16:16:55+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 690 Succ: 500 Fail:0 Unfinished:190 
+
+2020-09-24T16:16:56+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1127 Succ: 900 Fail:0 Unfinished:227 
+
+2020-09-24T16:16:57+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1549 Succ: 1350 Fail:0 Unfinished:199 
+
+2020-09-24T16:16:58+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1985 Succ: 1717 Fail:0 Unfinished:268 
+
+2020-09-24T16:16:58+09:00 - DEBUG [report-builder]: r.create.max: 1600931817.811 r.create.min: 1600931812.857 r.final.max: 1600931818.219 r.final.min: 1600931813.39 r.final.last: 1600931818.219 
+
+2020-09-24T16:16:58+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 373.0 
+
+2020-09-24T16:16:58+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 2000 
+
+2020-09-24T16:16:58+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2020-09-24T16:16:58+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: ###test result:### 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: 
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| smallOperations | 2000 | 0    | 403.7 tps | 0.75 s      | 0.34 s      | 0.50 s      | 373.0 tps  |
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: 
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.9MB       | 8.9MB       | 24.90%   | 16.05%   | 3.4MB      | 1.8MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 8.6MB       | 8.0MB       | 27.04%   | 20.11%   | 3.3MB      | 1.8MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.8MB     | 179.3MB     | 190.50%  | 139.67%  | 11.0MB     | 6.4MB       | 0B        | 8.1MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 177.9MB     | 168.4MB     | 193.06%  | 137.15%  | 10.9MB     | 6.4MB       | 0B        | 8.1MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 134.5MB     | 76.7MB      | 52.78%   | 36.32%   | 10.3MB     | 10.6MB      | 0B        | 14.1MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 178.6MB     | 95.6MB      | 66.22%   | 44.25%   | 8.4MB      | 22.7MB      | 0B        | 14.5MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 160.5MB     | 91.7MB      | 48.40%   | 33.16%   | 10.5MB     | 3.7MB       | 0B        | 14.5MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 11.1MB      | 11.1MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | sysbench                          | 4.9MB       | 4.9MB       | 812.10%  | 809.63%  | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [defaultTest]: ------ Passed 'smallOperations' testing ------ 
+
+2020-09-24T16:16:58+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: ###all test results:### 
+
+2020-09-24T16:16:58+09:00 - INFO [report-builder]: 
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | smallOperations | 2000 | 0    | 403.7 tps | 0.75 s      | 0.34 s      | 0.50 s      | 373.0 tps  |
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2020-09-24T16:16:58+09:00 - INFO [monitor.js]: 
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.9MB       | 24.90%   | 3.4MB      | 1.8MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 8.6MB       | 27.04%   | 3.3MB      | 1.8MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.8MB     | 190.50%  | 11.0MB     | 6.4MB       | 0B        | 8.1MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 177.9MB     | 193.06%  | 10.9MB     | 6.4MB       | 0B        | 8.1MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 134.5MB     | 52.78%   | 10.3MB     | 10.6MB      | 0B        | 14.1MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 178.6MB     | 66.22%   | 8.4MB      | 22.7MB      | 0B        | 14.5MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 160.5MB     | 48.40%   | 10.5MB     | 3.7MB       | 0B        | 14.5MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 11.1MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.4MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | sysbench                          | 4.9MB       | 812.10%  | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [caliper-flow]: Generated report with path /home/oslab/caliper_v0.1.0/report-20200924T071658.html 
+
+2020-09-24T16:16:58+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2020-09-24T16:16:58+09:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 1 succeeded, 0 failed #
+#######################################
+ 
+
+2020-09-24T16:16:58+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-24T16:16:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:16:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:16:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:16:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:16:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:31:24+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:31:25+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-24T16:31:25+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-24T16:31:38+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2020-09-24T16:31:39+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:31:44+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com 
+
+2020-09-24T16:31:44+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com 
+
+2020-09-24T16:31:44+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2020-09-24T16:31:49+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:32:03+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2020-09-24T16:32:03+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:32:17+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2020-09-24T16:32:17+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:32:31+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2020-09-24T16:32:31+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2020-09-24T16:32:45+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2020-09-24T16:32:45+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-09-24T16:32:50+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2020-09-24T16:32:50+09:00 - INFO [defaultTest]: ####### Testing 'smallOperations' ####### 
+
+2020-09-24T16:32:50+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Launching client with PID  11378 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Launching client with PID  11383 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Launching client with PID  11389 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Launching client with PID  11390 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Launching client with PID  11396 
+
+2020-09-24T16:32:50+09:00 - INFO [client-util.js]: Waiting for 5 clients to be ready...  
+
+2020-09-24T16:32:51+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:32:50+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:32:50+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:32:50+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:32:50+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:32:50+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:32:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:32:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:32:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:32:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-09-24T16:32:52+09:00 - INFO [client-util.js]: 5 clients ready, starting test phase 
+
+2020-09-24T16:32:52+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-09-24T16:32:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":1}
+
+2020-09-24T16:32:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":0}
+
+2020-09-24T16:32:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":3}
+
+2020-09-24T16:32:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":4}
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:32:52+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/raft/fabric-go-tls.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":400,"roundIdx":1,"totalClients":5,"clients":5,"clientargs":{},"clientIdx":2}
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: Info: client 11390 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: Info: client 11389 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: Info: client 11396 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:32:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#3 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:32:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#2 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:32:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#4 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: Info: client 11383 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:32:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#1 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:32:52+09:00 - INFO [local-client.js]: Info: client 11378 start test runFixedNumber():small_bank_operations 
+
+2020-09-24T16:32:52+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-09-24T16:32:52+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-09-24T16:32:53+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 325 Succ: 150 Fail:0 Unfinished:175 
+
+2020-09-24T16:32:54+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 704 Succ: 550 Fail:0 Unfinished:154 
+
+2020-09-24T16:32:55+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1119 Succ: 950 Fail:0 Unfinished:169 
+
+2020-09-24T16:32:56+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1508 Succ: 1300 Fail:0 Unfinished:208 
+
+2020-09-24T16:32:57+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1907 Succ: 1655 Fail:0 Unfinished:252 
+
+2020-09-24T16:32:58+09:00 - DEBUG [report-builder]: r.create.max: 1600932777.465 r.create.min: 1600932772.304 r.final.max: 1600932777.889 r.final.min: 1600932772.816 r.final.last: 1600932777.889 
+
+2020-09-24T16:32:58+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 358.1 
+
+2020-09-24T16:32:58+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 2000 
+
+2020-09-24T16:32:58+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2020-09-24T16:32:58+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: ###test result:### 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: 
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| smallOperations | 2000 | 0    | 387.5 tps | 0.73 s      | 0.31 s      | 0.49 s      | 358.1 tps  |
++-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: 
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.3MB       | 8.5MB       | 37.69%   | 24.83%   | 3.5MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.2MB       | 8.4MB       | 37.31%   | 28.05%   | 3.3MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 7.2MB       | 7.2MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 7.2MB       | 7.2MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 7.0MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.0MB     | 177.6MB     | 231.14%  | 170.16%  | 10.6MB     | 6.2MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 184.0MB     | 177.1MB     | 227.60%  | 163.31%  | 10.6MB     | 6.2MB       | 0B        | 7.8MB      |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 144.1MB     | 80.8MB      | 53.41%   | 35.29%   | 9.6MB      | 3.5MB       | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 132.2MB     | 75.8MB      | 65.68%   | 44.85%   | 7.9MB      | 21.0MB      | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 128.8MB     | 73.2MB      | 59.95%   | 39.78%   | 10.1MB     | 10.4MB      | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.6MB      | 10.6MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker | sysbench                          | 2.6MB       | 2.6MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [defaultTest]: ------ Passed 'smallOperations' testing ------ 
+
+2020-09-24T16:32:58+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: ###all test results:### 
+
+2020-09-24T16:32:58+09:00 - INFO [report-builder]: 
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name            | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|-----------------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | smallOperations | 2000 | 0    | 387.5 tps | 0.73 s      | 0.31 s      | 0.49 s      | 358.1 tps  |
++------+-----------------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2020-09-24T16:32:58+09:00 - INFO [monitor.js]: 
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE   | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...nk-v0 | 9.3MB       | 37.69%   | 3.5MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...nk-v0 | 9.2MB       | 37.31%   | 3.3MB      | 2.0MB       | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...le-v0 | 6.8MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...le-v0 | 7.2MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...rm-v0 | 7.2MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...rm-v0 | 7.1MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org1.example.co...es-v0 | 7.0MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | dev-peer0.org2.example.co...es-v0 | 6.9MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org1.example.com            | 184.0MB     | 231.14%  | 10.6MB     | 6.2MB       | 0B        | 7.6MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | peer0.org2.example.com            | 184.0MB     | 227.60%  | 10.6MB     | 6.2MB       | 0B        | 7.8MB      |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer0.example.com              | 144.1MB     | 53.41%   | 9.6MB      | 3.5MB       | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer1.example.com              | 132.2MB     | 65.68%   | 7.9MB      | 21.0MB      | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | orderer2.example.com              | 128.8MB     | 59.95%   | 10.1MB     | 10.4MB      | 0B        | 13.3MB     |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org2.example.com               | 10.4MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | ca.org1.example.com               | 10.6MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|--------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker | sysbench                          | 2.6MB       | 0.00%    | 0B         | 0B          | 0B        | 0B         |
++--------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [caliper-flow]: Generated report with path /home/oslab/caliper_v0.1.0/report-20200924T073258.html 
+
+2020-09-24T16:32:58+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2020-09-24T16:32:58+09:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 1 succeeded, 0 failed #
+#######################################
+ 
+
+2020-09-24T16:32:58+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-24T16:32:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:32:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:32:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:32:58+09:00 - INFO [client-util.js]: Client exited with code null 
+
+2020-09-24T16:32:58+09:00 - INFO [client-util.js]: Client exited with code null 
+

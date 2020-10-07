@@ -1,0 +1,60 @@
+2020-09-25T14:40:32+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-25T14:40:33+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-25T14:40:33+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft2o2p/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-25T14:40:47+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-25T14:40:47+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-25T14:40:48+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-25T14:40:51+09:00 - ERROR [caliper-flow]: Error: Error: Couldn't create Channel 'mychannel': Failed to connect before the deadline URL:grpcs://localhost:7050
+    at Fabric._createChannels (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabric.js:336:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2020-09-25T14:40:51+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft2o2p/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-09-25T14:55:47+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-09-25T14:55:48+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-09-25T14:55:48+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft2o2p/docker-compose-tls.yaml up -d;sleep 3s 
+
+2020-09-25T14:56:03+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: server 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-09-25T14:56:04+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-09-25T14:56:07+09:00 - ERROR [caliper-flow]: Error: Error: Couldn't create Channel 'mychannel': Failed to connect before the deadline URL:grpcs://localhost:7050
+    at Fabric._createChannels (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabric.js:336:23)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2020-09-25T14:56:07+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/raft2o2p/docker-compose-tls.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+

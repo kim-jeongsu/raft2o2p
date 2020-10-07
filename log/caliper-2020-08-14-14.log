@@ -1,0 +1,391 @@
+2020-08-14T14:35:33+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:35:34+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-08-14T14:35:34+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/kafka2o2pgoleveldb/docker-compose.yaml up -d;sleep 3s 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: none 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2020-08-14T14:35:57+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-08-14T14:36:03+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com,peer1.org1.example.com 
+
+2020-08-14T14:36:03+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com,peer1.org2.example.com 
+
+2020-08-14T14:36:03+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com,peer1.org1.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com,peer1.org2.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com,peer1.org1.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com,peer1.org2.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com,peer1.org1.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com,peer1.org2.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com,peer1.org1.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com,peer1.org2.example.com 
+
+2020-08-14T14:36:08+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2020-08-14T14:36:25+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2020-08-14T14:36:25+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2020-08-14T14:36:43+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2020-08-14T14:36:43+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2020-08-14T14:37:01+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2020-08-14T14:37:01+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2020-08-14T14:37:19+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2020-08-14T14:37:19+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2020-08-14T14:37:24+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2020-08-14T14:37:24+09:00 - INFO [defaultTest]: ####### Testing 'smallOperations' ####### 
+
+2020-08-14T14:37:24+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27071 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27076 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27082 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27084 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27094 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27100 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27106 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27112 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27118 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Launching client with PID  27124 
+
+2020-08-14T14:37:24+09:00 - INFO [client-util.js]: Waiting for 10 clients to be ready...  
+
+2020-08-14T14:37:25+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2020-08-14T14:37:26+09:00 - INFO [client-util.js]: 10 clients ready, starting test phase 
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":9}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":4}
+
+2020-08-14T14:37:26+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":7}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":3}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":0}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":1}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":2}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":5}
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":8}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"smallOperations","rateControl":{"type":"fixed-rate","opts":{"tps":2000}},"trim":0,"args":{"accounts":400,"txnPerBatch":1},"cb":"benchmark/smallbank/smallbankOperations.js","config":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","root":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":10,"clients":10,"clientargs":{},"clientIdx":6}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27084 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#3 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27118 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27124 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#8 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27094 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#9 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27106 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27112 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#4 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#7 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#6 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27082 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#2 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27076 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#1 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27100 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - INFO [local-client.js]: Info: client 27071 start test runFixedNumber():small_bank_operations 
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#5 for round#1
+	{"type":"fixed-rate","opts":{"tps":2000}}
+
+2020-08-14T14:37:26+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2020-08-14T14:37:27+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 904 Succ: 0 Fail:0 Unfinished:904 
+
+2020-08-14T14:37:28+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2396 Succ: 0 Fail:0 Unfinished:2396 
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27118,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":159240192,"heapTotal":111603712,"heapUsed":65641472,"external":7057158}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3605 Succ: 0 Fail:0 Unfinished:3605 
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27076,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":160858112,"heapTotal":112128000,"heapUsed":65739840,"external":6893149}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27100,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":158437376,"heapTotal":110555136,"heapUsed":71214392,"external":7296734}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27071,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":158646272,"heapTotal":110030848,"heapUsed":69592184,"external":7009552}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27082,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":158777344,"heapTotal":111079424,"heapUsed":67177096,"external":7212016}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27084,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":158965760,"heapTotal":111603712,"heapUsed":62748808,"external":6886472}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27094,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":160239616,"heapTotal":112128000,"heapUsed":72005440,"external":6893847}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27106,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":159010816,"heapTotal":110555136,"heapUsed":63256576,"external":6830245}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:29+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:29 GMT+0900 (KST)","process":{"pid":27112,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":159719424,"heapTotal":111603712,"heapUsed":63461216,"external":7196819}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:30+09:00 - ERROR uncaughtException: Cannot read property 'toString' of undefined
+	{"date":"Fri Aug 14 2020 14:37:30 GMT+0900 (KST)","process":{"pid":27124,"uid":0,"gid":0,"cwd":"/home/oslab/caliper_v0.1.0","execPath":"/usr/bin/node","version":"v8.17.0","argv":["/usr/bin/node","/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-fabric/lib/fabricClientWorker.js","/home/oslab/caliper_v0.1.0/node_modules/.bin/caliper","benchmark","run","--caliper-workspace","caliper/packages/caliper-samples","--caliper-benchconfig","benchmark/smallbank/config.yaml","--caliper-networkconfig","network/fabric-v1.4.1/kafka2o2pgoleveldb/fabric-go.yaml","--caliper-test-skip-end"],"memoryUsage":{"rss":158519296,"heapTotal":110555136,"heapUsed":59989120,"external":6861380}},"os":{"loadavg":[16.6171875,5.81201171875,2.09326171875],"uptime":6129577},"trace":[{"column":117,"file":"/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js","function":"Object.module.exports.run","line":182,"method":"run","native":false},{"column":34,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"setImmediatePromise","line":174,"method":null,"native":false},{"column":17,"file":"/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js","function":"Immediate.setImmediate [as _onImmediate]","line":147,"method":"setImmediate [as _onImmediate]","native":false},{"column":20,"file":"timers.js","function":"runCallback","line":810,"method":null,"native":false},{"column":5,"file":"timers.js","function":"tryOnImmediate","line":768,"method":null,"native":false},{"column":5,"file":"timers.js","function":"processImmediate [as _immediateCallback]","line":745,"method":null,"native":false}],"stack":["TypeError: Cannot read property 'toString' of undefined","    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples/benchmark/smallbank/smallbankOperations.js:182:117)","    at setImmediatePromise (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:174:34)","    at Immediate.setImmediate [as _onImmediate] (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/caliper-local-client.js:147:17)","    at runCallback (timers.js:810:20)","    at tryOnImmediate (timers.js:768:5)","    at processImmediate [as _immediateCallback] (timers.js:745:5)"]}
+
+2020-08-14T14:37:30+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 450 Fail:0 Unfinished:3550 
+
+2020-08-14T14:37:31+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 1350 Fail:0 Unfinished:2650 
+
+2020-08-14T14:37:32+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - ERROR [defaultTest]: ------ Failed 'smallOperations' testing with the following error ------
+    Error: Client already exited
+    at ChildProcess.<anonymous> (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/client/client-util.js:115:32)
+    at emitTwo (events.js:126:13)
+    at ChildProcess.emit (events.js:214:7)
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:198:12) 
+
+2020-08-14T14:37:32+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2020-08-14T14:37:32+09:00 - ERROR [caliper-flow]: Error: TypeError: Cannot read property 'unshift' of undefined
+    at Report.printResultsByRound (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/report/report.js:133:32)
+    at Object.module.exports.run (/home/oslab/caliper_v0.1.0/node_modules/@hyperledger/caliper-core/lib/caliper-flow.js:114:20)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:189:7) 
+
+2020-08-14T14:37:32+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/kafka2o2pgoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:32+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:33+09:00 - INFO [client-util.js]: Client exited with code 1 
+
+2020-08-14T14:37:33+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:34+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:35+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:36+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:37+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:38+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:39+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:40+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:41+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:42+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:43+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:44+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:45+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:46+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:47+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:48+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:49+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+
+2020-08-14T14:37:50+09:00 - ERROR [monitor-docker.js]: TypeError: Cannot read property 'cpu_usage' of undefined 
+
+2020-08-14T14:37:50+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 4000 Succ: 2250 Fail:0 Unfinished:1750 
+

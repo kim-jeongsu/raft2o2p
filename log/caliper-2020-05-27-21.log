@@ -1,0 +1,15 @@
+2020-05-27T21:25:25+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-flow]: Skipping start commands due to benchmark flow conditioning 
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-flow]: Skipping initialization phase due to benchmark flow conditioning 
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-flow]: Skipping install smart contract phase due to benchmark flow conditioning 
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-flow]: Skipping benchmark test phase due to benchmark flow conditioning 
+
+2020-05-27T21:25:27+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper_v0.1.0/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4.1/kafka2o2pgoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+

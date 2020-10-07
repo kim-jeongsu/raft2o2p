@@ -1,0 +1,1889 @@
+2019-12-30T18:07:07+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-12-30T18:07:08+09:00 - INFO [caliper-flow]: ####### Caliper Test ####### 
+
+2019-12-30T18:07:08+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper-benchmarks/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml up -d;sleep 3s 
+
+2019-12-30T18:07:18+09:00 - INFO [adapters/fabric]: Fabric SDK version: 1.4.4; TLS: none 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Org1's registrar enrolled successfully 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Org2's registrar enrolled successfully 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Org1's admin's materials are successfully loaded 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Org2's admin's materials are successfully loaded 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: client0.org1.example.com's materials are successfully loaded 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: client0.org2.example.com's materials are successfully loaded 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Channel 'mychannel' definiton being retrieved from file 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Channel 'mychannel' successfully created 
+
+2019-12-30T18:07:19+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2019-12-30T18:07:24+09:00 - INFO [adapters/fabric]: Org1's peers successfully joined mychannel: peer0.org1.example.com 
+
+2019-12-30T18:07:24+09:00 - INFO [adapters/fabric]: Org2's peers successfully joined mychannel: peer0.org2.example.com 
+
+2019-12-30T18:07:24+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: Installing chaincodes for mychannel... 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: marbles@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: drm@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2019-12-30T18:07:29+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2019-12-30T18:07:30+09:00 - INFO [adapters/fabric]: simple@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2019-12-30T18:07:30+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org1's peers: peer0.org1.example.com 
+
+2019-12-30T18:07:30+09:00 - INFO [adapters/fabric]: smallbank@v0 successfully installed on Org2's peers: peer0.org2.example.com 
+
+2019-12-30T18:07:30+09:00 - INFO [adapters/fabric]: Instantiating marbles@v0 in mychannel. This might take some time... 
+
+2019-12-30T18:07:44+09:00 - INFO [adapters/fabric]: Successfully instantiated marbles@v0 in mychannel 
+
+2019-12-30T18:07:44+09:00 - INFO [adapters/fabric]: Instantiating drm@v0 in mychannel. This might take some time... 
+
+2019-12-30T18:07:57+09:00 - INFO [adapters/fabric]: Successfully instantiated drm@v0 in mychannel 
+
+2019-12-30T18:07:57+09:00 - INFO [adapters/fabric]: Instantiating simple@v0 in mychannel. This might take some time... 
+
+2019-12-30T18:08:12+09:00 - INFO [adapters/fabric]: Successfully instantiated simple@v0 in mychannel 
+
+2019-12-30T18:08:12+09:00 - INFO [adapters/fabric]: Instantiating smallbank@v0 in mychannel. This might take some time... 
+
+2019-12-30T18:08:26+09:00 - INFO [adapters/fabric]: Successfully instantiated smallbank@v0 in mychannel 
+
+2019-12-30T18:08:26+09:00 - INFO [adapters/fabric]: Sleeping 5s... 
+
+2019-12-30T18:08:31+09:00 - INFO [caliper-flow]: Started monitor successfully 
+
+2019-12-30T18:08:31+09:00 - INFO [defaultTest]: ####### Testing 'open' ####### 
+
+2019-12-30T18:08:31+09:00 - INFO [defaultTest]: ------ Test round 1 ------ 
+
+2019-12-30T18:08:31+09:00 - INFO [client-util.js]: Launching client with PID  1322 
+
+2019-12-30T18:08:31+09:00 - INFO [client-util.js]: Waiting for 1 clients to be ready...  
+
+2019-12-30T18:08:32+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:31+09:00 - DEBUG Constructed a winston logger with the specified targets:
+	{"consolelogger":{"target":"console","level":"info"},"filelogger":{"target":"daily-rotate-file","level":"debug","filename":"log/caliper-%DATE%.log","datePattern":"YYYY-MM-DD-HH","maxSize":"5m","zippedArchive":true}}
+
+2019-12-30T18:08:33+09:00 - INFO [fabric/fabricClientWorker]: Client ready 
+
+2019-12-30T18:08:33+09:00 - INFO [client-util.js]: Client ready message recieved 
+
+2019-12-30T18:08:33+09:00 - INFO [client-util.js]: 1 clients ready, starting test phase 
+
+2019-12-30T18:08:33+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"open","rateControl":{"type":"fixed-rate","opts":{"tps":1000}},"trim":0,"args":{"money":10000},"cb":"benchmark/simple/open.js","config":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples/network/fabric-v1.4/2org1peergoleveldb/fabric-go.yaml","root":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples","numb":1000,"roundIdx":1,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-12-30T18:08:33+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-12-30T18:08:33+09:00 - INFO [local-client.js]: Info: client 1322 start test runFixedNumber():opening accounts 
+
+2019-12-30T18:08:33+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#1
+	{"type":"fixed-rate","opts":{"tps":1000}}
+
+2019-12-30T18:08:33+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 0 Succ: 0 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:34+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 123 Succ: 90 Fail:0 Unfinished:33 
+
+2019-12-30T18:08:35+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 274 Succ: 200 Fail:0 Unfinished:74 
+
+2019-12-30T18:08:36+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 424 Succ: 320 Fail:0 Unfinished:104 
+
+2019-12-30T18:08:37+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 567 Succ: 440 Fail:0 Unfinished:127 
+
+2019-12-30T18:08:38+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 718 Succ: 550 Fail:0 Unfinished:168 
+
+2019-12-30T18:08:39+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 881 Succ: 660 Fail:0 Unfinished:221 
+
+2019-12-30T18:08:40+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 780 Fail:0 Unfinished:220 
+
+2019-12-30T18:08:41+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 900 Fail:0 Unfinished:100 
+
+2019-12-30T18:08:42+09:00 - DEBUG [report-builder]: r.create.max: 1577696919.981 r.create.min: 1577696913.295 r.final.max: 1577696922.088 r.final.min: 1577696913.53 r.final.last: 1577696922.088 
+
+2019-12-30T18:08:42+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 113.7 
+
+2019-12-30T18:08:42+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 1000 
+
+2019-12-30T18:08:42+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-12-30T18:08:42+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2019-12-30T18:08:42+09:00 - INFO [report-builder]: ###test result:### 
+
+2019-12-30T18:08:42+09:00 - INFO [report-builder]: 
++------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|------|------|-----------|-------------|-------------|-------------|------------|
+| open | 1000 | 0    | 149.6 tps | 2.17 s      | 0.15 s      | 1.08 s      | 113.7 tps  |
++------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-12-30T18:08:42+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-12-30T18:08:42+09:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...nk-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 476B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...nk-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 273B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 8.9MB       | 8.2MB       | 20.87%   | 13.13%   | 1.9MB      | 983.1KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 8.2MB       | 7.7MB       | 20.20%   | 12.70%   | 1.9MB      | 967.8KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...rm-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 152.8MB     | 149.2MB     | 74.62%   | 52.74%   | 5.9MB      | 3.1MB       | 152.0KB   | 12.2MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 189.2MB     | 186.0MB     | 73.85%   | 53.99%   | 5.9MB      | 3.1MB       | 88.0KB    | 12.2MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 25.8MB      | 25.8MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 40.5MB      | 37.8MB      | 26.86%   | 17.22%   | 3.8MB      | 7.8MB       | 80.0KB    | 8.9MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...c-1.0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-12-30T18:08:42+09:00 - INFO [defaultTest]: ------ Passed 'open' testing ------ 
+
+2019-12-30T18:08:42+09:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-12-30T18:08:42+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:43+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:44+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:45+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:46+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:47+09:00 - INFO [defaultTest]: ####### Testing 'query' ####### 
+
+2019-12-30T18:08:47+09:00 - INFO [defaultTest]: ------ Test round 2 ------ 
+
+2019-12-30T18:08:47+09:00 - INFO [client-util.js]: Waiting for 0 clients to be ready...  
+
+2019-12-30T18:08:47+09:00 - INFO [client-util.js]: 0 clients ready, starting test phase 
+
+2019-12-30T18:08:47+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"query","rateControl":{"type":"fixed-rate","opts":{"tps":1000}},"trim":0,"cb":"benchmark/simple/query.js","config":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples/network/fabric-v1.4/2org1peergoleveldb/fabric-go.yaml","root":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples","numb":1000,"roundIdx":2,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-12-30T18:08:47+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-12-30T18:08:47+09:00 - INFO [local-client.js]: Info: client 1322 start test runFixedNumber():querying accounts 
+
+2019-12-30T18:08:47+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#2
+	{"type":"fixed-rate","opts":{"tps":1000}}
+
+2019-12-30T18:08:47+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1000 Succ: 1000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:48+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1285 Succ: 1281 Fail:0 Unfinished:4 
+
+2019-12-30T18:08:49+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 1589 Succ: 1585 Fail:0 Unfinished:4 
+
+2019-12-30T18:08:50+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:50+09:00 - DEBUG [report-builder]: r.create.max: 1577696930.645 r.create.min: 1577696927.394 r.final.max: 1577696930.652 r.final.min: 1577696927.409 r.final.last: 1577696930.652 
+
+2019-12-30T18:08:50+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 306.9 
+
+2019-12-30T18:08:50+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 1000 
+
+2019-12-30T18:08:50+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-12-30T18:08:50+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2019-12-30T18:08:50+09:00 - INFO [report-builder]: ###test result:### 
+
+2019-12-30T18:08:50+09:00 - INFO [report-builder]: 
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name  | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|-------|------|------|-----------|-------------|-------------|-------------|------------|
+| query | 1000 | 0    | 307.6 tps | 0.08 s      | 0.01 s      | 0.01 s      | 306.9 tps  |
++-------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-12-30T18:08:50+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-12-30T18:08:50+09:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...nk-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...nk-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 9.0MB       | 8.9MB       | 35.60%   | 26.21%   | 1.1MB      | 479.7KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 8.6MB       | 8.5MB       | 35.00%   | 25.27%   | 1.1MB      | 478.9KB     | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...rm-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 152.1MB     | 152.0MB     | 103.48%  | 74.47%   | 1.2MB      | 1.8MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 189.1MB     | 189.0MB     | 97.42%   | 72.88%   | 1.2MB      | 1.8MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 25.8MB      | 25.8MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 40.4MB      | 40.4MB      | 0.08%    | 0.05%    | 132B       | 66B         | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...c-1.0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-12-30T18:08:50+09:00 - INFO [defaultTest]: ------ Passed 'query' testing ------ 
+
+2019-12-30T18:08:50+09:00 - INFO [defaultTest]: Waiting 5 seconds for the next round... 
+
+2019-12-30T18:08:51+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:52+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:53+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:54+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:55+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:55+09:00 - INFO [defaultTest]: ####### Testing 'transfer' ####### 
+
+2019-12-30T18:08:55+09:00 - INFO [defaultTest]: ------ Test round 3 ------ 
+
+2019-12-30T18:08:55+09:00 - INFO [client-util.js]: Waiting for 0 clients to be ready...  
+
+2019-12-30T18:08:55+09:00 - INFO [client-util.js]: 0 clients ready, starting test phase 
+
+2019-12-30T18:08:55+09:00 - DEBUG [local-client.js]: doTest() with:
+	{"type":"test","label":"transfer","rateControl":{"type":"fixed-rate","opts":{"tps":1000}},"trim":0,"args":{"money":100},"cb":"benchmark/simple/transfer.js","config":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples/network/fabric-v1.4/2org1peergoleveldb/fabric-go.yaml","root":"/home/oslab/caliper-benchmarks/caliper/packages/caliper-samples","numb":1000,"roundIdx":3,"totalClients":1,"clients":1,"clientargs":{},"clientIdx":0}
+
+2019-12-30T18:08:55+09:00 - INFO [local-client.js]: txUpdateTime: 1000 
+
+2019-12-30T18:08:55+09:00 - INFO [local-client.js]: Info: client 1322 start test runFixedNumber():transfering money 
+
+2019-12-30T18:08:55+09:00 - DEBUG [rateControl.js]: Creating rate controller for client#0 for round#3
+	{"type":"fixed-rate","opts":{"tps":1000}}
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[5cd2067096] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[dc263a5d0c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[d87cead520] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[7b65fbe259] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[d56769bb39] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[2dcf690911] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[fd643217f7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2000 Succ: 2000 Fail:0 Unfinished:0 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[b69ea12787] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[fb43bbaa50] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[56e09b17c7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:56+09:00 - ERROR [adapters/fabric]: Transaction[9c70fc7da5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[29e98a92bb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[efb4ad8702] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[bf2fb70009] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[76705ff0be] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[2f6e84a026] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[9cd07f7e9d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[2e7a3fd7df] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[6501aa3ec0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[52969100db] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[5f27c17230] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[798f8ae37e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[3b1754da8d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[47abdf6aff] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[1245e8ce31] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[3bf5ef2bf2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[ed78921e7a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[b8b7baebc9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[19c8c88454] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2149 Succ: 2082 Fail:8 Unfinished:59 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[aed813bf30] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[125bc12fc3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[4a49c02df2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[d15151f803] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[530f1d0c1c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[10b30b3006] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:57+09:00 - ERROR [adapters/fabric]: Transaction[f83e4c0fa1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[5aa1a93f39] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[b8bb25b4be] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[46222e5569] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[7bb2914e69] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[5728ab9482] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[7ebfc7854b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[7b96a87c07] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[5652e099d8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[d3f63a15c7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[0dfd453400] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[ef7cf00627] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[b7431456a9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[9be9a9039c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[ffda819f15] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[427e31c0c9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[40d6413aca] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[3d2a3d46bb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[05c721cdad] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[36093c1cd4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[3c2011b189] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[ea6af6b08e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[2ef0b5f834] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[af08440ecf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2322 Succ: 2176 Fail:34 Unfinished:112 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[6f3f80eb38] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[925994fb4e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[a83921033a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[4ac6910e2d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[1095918409] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[eda2c11389] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[77e9d97720] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:58+09:00 - ERROR [adapters/fabric]: Transaction[90223fb805] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[d5e7eef168] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[a6681857f0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[2d5956c417] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[f9012cf98e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[e291541afa] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[92f611a513] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[9f73ab9954] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[511b98780c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[f0f925fb21] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[502163d847] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[51fc1716ce] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[a96a81d2e7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[52d1efb0de] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[5f5473a8ac] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[7a0bb11208] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[12da1c186b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[195b1311fc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[79e7fa34a1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[d613a5ed92] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[e44382afd1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[46dbb83da1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[07e00b5f1e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[9f51578738] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[0602099430] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[90c62733e9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[b7c9e06b01] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[adb291f9be] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2488 Succ: 2266 Fail:66 Unfinished:156 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[ff905c6b8b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[b90f6dc90b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[384f299edf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[f2918a6766] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[49db0575dc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[b61f14c583] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[e49d301413] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[be415dd4ba] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[57bc7d4ccd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:08:59+09:00 - ERROR [adapters/fabric]: Transaction[655ab0c081] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[2dae7c458c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[64708cf802] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[636875b9f9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[bed0ea84a6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[f113a4695e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[bfb60b378f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[e69ae0c249] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[2d43ec0e75] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[391f0d2e88] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[dff35771ca] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[baad7fb2fa] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[a1753283e6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[7efb271d71] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[1c3ddf3ebf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[d730c23ce2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[6961bf8bcb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[ddf013d605] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[14b7301ff5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[43c6a34d22] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[9ea24ad766] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[4164b8d4a5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[53a1b49d69] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[c0491b7230] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[6eb651bb38] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[c9138e3a82] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[09cd5367f8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[f8477bf4dd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[d8a9c430f2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[1059992f40] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[febcd25a71] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[bf83c62f93] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[1dd3e8d9f5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[c5df17abf5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[f107bfad0a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[f4e1a09677] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[1bc937583a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2649 Succ: 2344 Fail:98 Unfinished:207 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[8d87cc4f0f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[0418ef957d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[9282944ad0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[b0c966671f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[3ab012b36d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[a76a4122b5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[fac431928c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[feea89c9b5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[d01ed567d0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:00+09:00 - ERROR [adapters/fabric]: Transaction[efa8e9d3f6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[cd61b7fe04] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[aa7ac25503] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[aed3b82c3b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[bf3b211540] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[7d232e603a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[77e7f2a107] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[7dab86740a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[4e01ced5dd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[3917274359] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[2d07214e64] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[89101e227f] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[df5c8c9246] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[88bfc93392] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[e0f6cd6262] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[9cab95f115] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[4d4e3f7b99] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[6a8a3a2773] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[65ec1e07a5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[565331da87] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[22e95f3ab7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[d351bac7b0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[6770925d8f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[cccd74b97c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[863b3b52a9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[6154337941] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[5c5aca1fb4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[c0c7d4c63e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[abcf3ea29e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[18bfbfa36d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[ebb48ea1cc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[4aeec30ca7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[882614c073] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[1941a3fa9f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[63584cfdad] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[0ca1828462] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[504d1c8477] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[c001baab06] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2821 Succ: 2416 Fail:146 Unfinished:259 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[828e44f6e0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[b5948db03f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[ade2626603] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[27ca9c6b69] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[7c9e698b66] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[87a85e697d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[9b749938c3] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[71de1bcf0b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[38098fd23b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[3398769c48] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:01+09:00 - ERROR [adapters/fabric]: Transaction[6863a1e451] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ac56db0726] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[1551b8b7b8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[09c0f9c3c5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[497d3503b7] life-cycle errors:
+	- Read/Write set mismatch between endorsements 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[891fae4422] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[6b2c3dd2a6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[e4b91aa970] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[a3b720619f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[826cccab53] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[5d9af90053] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[501e022661] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[f6e79966ea] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ad36bfc2a7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[760eb89c24] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[cf4d47e9d4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[7127471191] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[d2364d8f6d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[5b9e355a5a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[67452b283b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[b79be9937a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[2093da244b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[393e31a411] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[df24de6184] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[78b9cc20b3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[2c5b795e28] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ce7e48b15b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[eed90de7ec] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[fd94daa5cb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[47baebb49d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[fcfffc48e8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[7ce4ad5189] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ca2ec781ba] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[fcdc0aa76b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[1cdc2aec44] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[0d6194920a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[e8c61a217e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[91e46f4d8e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[fdd0c9db42] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[36b0ec03ea] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[cdcdc2e166] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[d95de95c75] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[69a812d740] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[856c0f082f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ac1e33b299] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 2969 Succ: 2481 Fail:194 Unfinished:294 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[c52a26ae48] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[2c16efca24] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[ccf8dc4a84] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[a14caf3f28] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[89cf7f4854] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[0fde2f0f55] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[88ae58b677] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[0f6eecf512] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[0a4ccc1d6b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[6e83be14e8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[c912a81104] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[727b9e81bc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[a6fc06951f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[47c8b0f2b2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:02+09:00 - ERROR [adapters/fabric]: Transaction[438f3a3b19] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[7fb97a94ad] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[e5ab1da6ed] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[8a1da4dde7] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[ea12221daf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[396ae37725] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[9b5fe9dd17] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[90f0e3c1b6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[1d72818ce1] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[cf399b4e86] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[049aa7cfc2] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[bcee0c6b57] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[d06143ad06] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[d47cfcfa5d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[fc7d47568c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[60a84a3d4d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[3efa4cd547] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[50bc35ff9e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[b99076695a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[e68b60ad82] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[b825b82685] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[8805974505] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[5ea8efb625] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[ac4f396352] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[8bcf73eee8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[de3c51e189] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[3888014c91] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[9826555f14] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[72bd2b672e] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[bf13f9c578] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[602238b8e9] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[4abefe5bef] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[0b2420516a] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[e5d87d61d4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[474dcbe93c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[ef0adfa862] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[7465a54679] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[3cc1d3f1c5] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[f3f5214461] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[4ca62d1fcd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[2ba4a6e89f] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2543 Fail:253 Unfinished:204 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[50a738a529] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[158aecde16] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[1eb8d817cb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[efdfd0d907] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[66207783f0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[53ae3dd274] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[823e64c9ef] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[042dc2e1eb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[8529e238cd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[ebc243bb9d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[cacfc1ae17] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[685d30fa38] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[c04d8988c6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[655ce66332] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[b8f5114ff4] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:03+09:00 - ERROR [adapters/fabric]: Transaction[9b7c76ea68] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[10f39c2e0c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[760cbc1ac6] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[fe1fc863d8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[a6e2dcd6a0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[ec7f95dfbc] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[9499d60072] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[99cb5b640c] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[5a90b50cac] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[194b17b2bf] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[69eea27902] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[138ecca826] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[d24fcaa624] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[ef8740ea46] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[ebe9e15db8] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[8f44ee382d] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[beda827717] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[1ec98e3a3b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[d7782848ed] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[1a8118e581] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[06c51574c0] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[7c2db15de3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[ca6d6373ab] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[d7f77cb3e3] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[ff6643d1cb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[cce19f6ffb] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[747a2b8edd] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[9a8f115f40] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[d2904f0c24] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - ERROR [adapters/fabric]: Transaction[e7a900f47b] commit errors:
+	- Commit error on peer0.org1.example.com with code MVCC_READ_CONFLICT
+	- Commit error on peer0.org2.example.com with code MVCC_READ_CONFLICT 
+
+2019-12-30T18:09:04+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2658 Fail:342 Unfinished:0 
+
+2019-12-30T18:09:04+09:00 - DEBUG [report-builder]: r.create.max: 1577696942.12 r.create.min: 1577696935.932 r.final.max: 1577696944.678 r.final.min: 1577696936.126 r.final.last: 1577696944.679 
+
+2019-12-30T18:09:04+09:00 - DEBUG [report-builder]:  throughput for only success time computed: 75.2 
+
+2019-12-30T18:09:04+09:00 - DEBUG [report-builder]: sendTransactionProposal: 0ms length: 1000 
+
+2019-12-30T18:09:04+09:00 - DEBUG [report-builder]: sendTransaction: 0ms 
+
+2019-12-30T18:09:04+09:00 - DEBUG [report-builder]: invokeLatency: 0ms 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: ###test result:### 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: 
++----------+------+------+-----------+-------------+-------------+-------------+------------+
+| Name     | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|----------|------|------|-----------|-------------|-------------|-------------|------------|
+| transfer | 658  | 342  | 161.6 tps | 2.59 s      | 0.14 s      | 1.27 s      | 75.2 tps   |
++----------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: ### resource stats ### 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: 
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | Memory(avg) | CPU(max) | CPU(avg) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | -           | NaN%     | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...nk-v0 | 6.9MB       | 6.9MB       | 0.00%    | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...nk-v0 | 7.1MB       | 7.1MB       | 0.00%    | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 9.2MB       | 9.1MB       | 34.57%   | 20.60%   | 2.6MB      | 1.6MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 9.1MB       | 8.9MB       | 35.03%   | 20.99%   | 2.6MB      | 1.6MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...rm-v0 | 6.9MB       | 6.9MB       | 0.01%    | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...es-v0 | 6.8MB       | 6.8MB       | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 157.6MB     | 155.0MB     | 93.26%   | 62.67%   | 6.7MB      | 3.8MB       | 0B        | 12.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 194.2MB     | 191.8MB     | 92.77%   | 60.55%   | 6.7MB      | 3.8MB       | 0B        | 12.4MB     |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 25.8MB      | 25.8MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.4MB      | 10.4MB      | 0.00%    | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 45.2MB      | 43.4MB      | 29.36%   | 17.18%   | 3.9MB      | 7.9MB       | 48.0KB    | 9.1MB      |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...le-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...rm-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...nk-v0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|-------------|----------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...c-1.0 | 0B          | 0B          | 0.00%    | 0.00%    | 0B         | -           | 0B        | 0B         |
++---------+-----------------------------------+-------------+-------------+----------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-12-30T18:09:04+09:00 - INFO [defaultTest]: ------ Passed 'transfer' testing ------ 
+
+2019-12-30T18:09:04+09:00 - INFO [caliper-flow]: ---------- Finished Test ----------
+ 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: ###all test results:### 
+
+2019-12-30T18:09:04+09:00 - INFO [report-builder]: 
++------+----------+------+------+-----------+-------------+-------------+-------------+------------+
+| Test | Name     | Succ | Fail | Send Rate | Max Latency | Min Latency | Avg Latency | Throughput |
+|------|----------|------|------|-----------|-------------|-------------|-------------|------------|
+| 1    | open     | 1000 | 0    | 149.6 tps | 2.17 s      | 0.15 s      | 1.08 s      | 113.7 tps  |
+|------|----------|------|------|-----------|-------------|-------------|-------------|------------|
+| 2    | query    | 1000 | 0    | 307.6 tps | 0.08 s      | 0.01 s      | 0.01 s      | 306.9 tps  |
+|------|----------|------|------|-----------|-------------|-------------|-------------|------------|
+| 3    | transfer | 658  | 342  | 161.6 tps | 2.59 s      | 0.14 s      | 1.27 s      | 75.2 tps   |
++------+----------+------+------+-----------+-------------+-------------+-------------+------------+
+ 
+
+2019-12-30T18:09:04+09:00 - INFO [monitor.js]: 
+ ### resource stats (maximum) ### 
+
+2019-12-30T18:09:04+09:00 - INFO [monitor.js]: 
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+| TYPE    | NAME                              | Memory(max) | CPU(max) | Traffic In | Traffic Out | Disc Read | Disc Write |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Process | node local-client.js(avg)         | -           | NaN%     | -          | -           | -         | -          |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...nk-v0 | 6.9MB       | 0.00%    | 476B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...nk-v0 | 7.1MB       | 0.02%    | 273B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...le-v0 | 9.2MB       | 35.60%   | 2.6MB      | 1.6MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...le-v0 | 9.1MB       | 35.03%   | 2.6MB      | 1.6MB       | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...rm-v0 | 6.9MB       | 0.01%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...rm-v0 | 6.8MB       | 0.00%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org2.example.co...es-v0 | 6.8MB       | 0.02%    | 203B       | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...es-v0 | 6.8MB       | 0.00%    | 70B        | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org2.example.com            | 157.6MB     | 103.48%  | 6.7MB      | 3.8MB       | 152.0KB   | 12.7MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | peer0.org1.example.com            | 194.2MB     | 97.42%   | 6.7MB      | 3.8MB       | 88.0KB    | 12.7MB     |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org1.example.com               | 25.8MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | ca.org2.example.com               | 10.4MB      | 0.00%    | 0B         | 0B          | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | orderer.example.com               | 45.2MB      | 29.36%   | 3.9MB      | 7.9MB       | 80.0KB    | 9.1MB      |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...le-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...le-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...le-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...rm-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...rm-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...rm-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer2.org1.oslab.com-...nk-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer1.org1.oslab.com-...nk-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.oslab.com-...nk-v0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
+|---------|-----------------------------------|-------------|----------|------------|-------------|-----------|------------|
+| Docker  | dev-peer0.org1.example.co...c-1.0 | 0B          | 0.00%    | 0B         | -           | 0B        | 0B         |
++---------+-----------------------------------+-------------+----------+------------+-------------+-----------+------------+
+ 
+
+2019-12-30T18:09:05+09:00 - INFO [caliper-flow]: Generated report with path /home/oslab/caliper-benchmarks/report-20191230T090905.html 
+
+2019-12-30T18:09:05+09:00 - INFO [demo.js]: [Transaction Info] - Submitted: 3000 Succ: 2658 Fail:342 Unfinished:0 
+
+2019-12-30T18:09:05+09:00 - INFO [caliper-flow]: 
+
+#######################################
+# Test summary: 3 succeeded, 0 failed #
+#######################################
+ 
+
+2019-12-30T18:09:05+09:00 - INFO [caliper-utils]: Executing command: cd /home/oslab/caliper-benchmarks/caliper/packages/caliper-samples;docker-compose -f network/fabric-v1.4/2org1peergoleveldb/docker-compose.yaml down;(test -z \"$(docker ps -aq)\") || docker rm $(docker ps -aq);(test -z \"$(docker images dev* -q)\") || docker rmi $(docker images dev* -q);rm -rf /tmp/hfc-* 
+
+2019-12-30T18:09:05+09:00 - INFO [client-util.js]: Client exited with code null 
+
